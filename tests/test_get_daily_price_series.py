@@ -1,6 +1,6 @@
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from api_helper import NorenApiPy
+from api_helper import NuvamaApiPy
 import logging
 import yaml
 
@@ -8,7 +8,7 @@ import yaml
 logging.basicConfig(level=logging.DEBUG)
 
 #start of our program
-api = NorenApiPy()
+api = NuvamaApiPy()
 
 #credentials
 with open('/home/ubuntu/workspace/daily_price_series/NorenApi-Py/cred.yml') as f:

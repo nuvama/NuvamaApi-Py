@@ -1,6 +1,6 @@
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from api_helper import NorenApiPy
+from api_helper import NuvamaApiPy
 import datetime
 import logging
 import time
@@ -61,7 +61,7 @@ def get_time(time_string):
     return time.mktime(data)
 
 #start of our program
-api = NorenApiPy()
+api = NuvamaApiPy()
 
 #yaml for parameters
 with open('..\\cred.yml') as f:

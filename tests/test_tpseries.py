@@ -1,6 +1,6 @@
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from api_helper import NorenApiPy
+from api_helper import NuvamaApiPy
 import logging
 import yaml
 import datetime
@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 #start of our program
-api = NorenApiPy()
+api = NuvamaApiPy()
 
 #use following if yaml isnt used
 #user    = <uid>

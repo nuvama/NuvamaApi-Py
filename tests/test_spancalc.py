@@ -1,7 +1,7 @@
 import json
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from api_helper import NorenApiPy
+from api_helper import NuvamaApiPy
 import logging
 import yaml
 from NorenRestApiPy.NorenApi import position
@@ -10,7 +10,7 @@ from NorenRestApiPy.NorenApi import position
 logging.basicConfig(level=logging.DEBUG)
 
 #start of our program
-api = NorenApiPy()
+api = NuvamaApiPy()
 
 #credentials
 with open('/home/ubuntu/Desktop/Noren/NorenApi-Py-main/cred.yml') as f:
