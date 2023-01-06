@@ -37,7 +37,7 @@ def get_time(time_string):
     return time.mktime(data)
 
 
-class NorenApiPy(NorenApi):
+class NuvamaApiPy(NorenApi):
     def __init__(self):
         NorenApi.__init__(self, host='http://rama.kambala.co.in:6002/NorenWClient/', websocket='ws://rama.kambala.co.in:5552/NorenWS/')
         global api
