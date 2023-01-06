@@ -1,4 +1,4 @@
-from api_helper import NorenApiPy, get_time
+from api_helper import NuvamaApiPy, get_time
 import datetime
 import logging
 import time
@@ -47,7 +47,7 @@ def get_time(time_string):
     return time.mktime(data)
 
 #start of our program
-api = NorenApiPy()
+api = NuvamaApiPy()
 
 #use following if yaml isnt used
 #user    = <uid>
