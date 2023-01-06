@@ -1,11 +1,11 @@
-from api_helper import NorenApiPy
+from api_helper import NuvamaApiPy
 import logging
 
 #enable dbug to see request and responses
 logging.basicConfig(level=logging.DEBUG)
 
 #start of our program
-api = NorenApiPy()
+api = NuvamaApiPy()
 
 #credentials
 user    = <uid>
